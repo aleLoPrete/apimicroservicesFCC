@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-app.use((req, res) => {
-    res.json({ "ciao": "martina" });
+app.get("/", (req, res) => {
+    res.send("Hello Express");
 });
 
 
