@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+app.use((req, res) => {
+    res.json({ "ciao": "martina" });
+});
 
 
 
@@ -24,16 +27,4 @@ var app = express();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
